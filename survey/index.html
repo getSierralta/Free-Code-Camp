@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Shojumaru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Survey Baymax</title>
+</head>
+<body>
+  <div class="container">
+      <main class="form">
+          <h1 class="title-pri form__title" id="title">
+              Baymax
+          </h1>
+          <p class="para form__desc" id="description">
+            Thank you for being part of the Baymax's family!</br> We'll apriciate if you take a moment of your time to help us improve!
+          </p>
+          <form action="#" class="form__form" id="survey-form">
+              <h4 class="title-quar">
+                  Name
+              </h4>
+              
+              <input type="text" name="name" id="name" class="form__form--text" placeholder="Name" required>
+              <label for="name" class="form__form--text--label" id="name-label">
+                  Name
+              </label>
+              <h4 class="title-quar">
+                E-Mail
+              </h4>
+              <input type="email" name="email" id="email" class="form__form--text" placeholder="Email" required>
+              <label for="email" class="form__form--text--label" id="email-label">
+                E-mail
+            </label>
+              <h4 class="title-quar">
+                Age
+                </h4>
+              <input type="number" min="18" max="105" name="age" id="number" class="form__form--text " placeholder="Age" required>
+              <label for="number" class="form__form--text--label" id="number-label">
+                    Age
+                </label>
+              <h4 class="title-quar">
+                Do you have pre-existing conditions?
+              </h4>
+              <select name="carear" id="dropdown" class="form__form--text form__form--dropdown">
+                <option class="form__form--dropdown__option">
+                    Please select a condition
+                  </option>
+                <option value="Heart Problems" class="form__form--dropdown__option">
+                    Heart Problems
+                  </option>
+                  <option value="Respiration Problems" class="form__form--dropdown__option">
+                    Respiration Problems
+                </option>
+                <option value="Cancer" class="form__form--dropdown__option">
+                      Cancer
+                </option>
+                <option value="prefer-not-to-say" class="form__form--dropdown__option">
+                      Prefer Not To Say
+                </option>
+                <option value="other" class="form__form--dropdown__option">
+                      Other
+                </option>
+              </select>
+         
+          <h4 class="title-quar">
+           Would you recommend Baymax to a friend or a family member?
+          </h4>
+          <div class="form__form__container-radio">            
+            <label for="Yes" class="form__form__container-radio--label">
+                Yes
+                <input type="radio" id="Yes" name="recommend" value="Yes" class="form__form__container-radio--label--radio" checked="checked">
+                <span class="form__form__container-radio--label--checkmark"></span>
+            </label>
+          </div>
+          <div class="form__form__container-radio">            
+            <label for="Maybe" class="form__form__container-radio--label">
+                Maybe
+                <input type="radio" id="Maybe" name="recommend" value="Maybe" class="form__form__container-radio--label--radio" checked="checked">
+                <span class="form__form__container-radio--label--checkmark"></span>
+            </label>
+          </div>
+          <div class="form__form__container-radio">            
+            <label for="Not Sure" class="form__form__container-radio--label">
+                Not Sure
+                <input type="radio" id="Not Sure" name="recommend" value="Not Sure" class="form__form__container-radio--label--radio" checked="checked">
+                <span class="form__form__container-radio--label--checkmark"></span>
+            </label>
+          </div>      
+          <h4 class="title-quar">
+            Features you have used of Baymax
+           </h4>
+                
+          <div class="form__form__container-check-box">            
+            <label for="Streng" class="form__form__container-check-box--label">
+                Streng
+                <input type="checkbox" id="Streng" name="Features" value="Streng" class="form__form--radio">
+                <span class="form__form__container-check-box--label--checkmark"></span>
+            </label>
+          </div>     
+          <div class="form__form__container-check-box">            
+            <label for="Heating System" class="form__form__container-check-box--label">
+                Heating System
+                <input type="checkbox" id="Heating System" name="Features" value="Heating System" class="form__form--radio">
+                <span class="form__form__container-check-box--label--checkmark"></span>
+            </label>
+          </div> 
+          <div class="form__form__container-check-box">            
+            <label for="Scanner" class="form__form__container-check-box--label">
+                Scanner
+                <input type="checkbox" id="Scanner" name="Features" value="Scanner" class="form__form--radio">
+                <span class="form__form__container-check-box--label--checkmark"></span>
+            </label>
+          </div> 
+          <div class="form__form__container-check-box">            
+            <label for="Healthcare information assess" class="form__form__container-check-box--label">
+                Healthcare information assess
+                <input type="checkbox" id="Healthcare information assess" name="Features" value="Healthcare information assess" class="form__form--radio">
+                <span class="form__form__container-check-box--label--checkmark"></span>
+            </label>
+          </div> 
+          <div class="form__form__container-check-box">            
+            <label for="Defibrillators" class="form__form__container-check-box--label">
+                Defibrillators
+                <input type="checkbox" id="Defibrillators" name="Features" value="Defibrillators" class="form__form--radio">
+                <span class="form__form__container-check-box--label--checkmark"></span>
+            </label>
+          </div> 
+          <div class="form__form__container-check-box">            
+            <label for="Antibacterial Spray" class="form__form__container-check-box--label">
+                Antibacterial Spray
+                <input type="checkbox" id="Antibacterial Spray" name="Features" value="Antibacterial Spray" class="form__form--radio">
+                <span class="form__form__container-check-box--label--checkmark"></span>
+            </label>
+          </div>      
+          
+           <h4 class="title-quar">
+            What would you like Baymax to be able to do?
+           </h4>
+           <textarea name="client-recomends" id="textarea" cols="30" rows="10" class="form__form--text form__form--text--textarea" placeholder="Write here...">
+           </textarea>
+           <input type="submit" value="submit" class="form__form--button btn-green" id="submit">
+        </form>
+      </main>
+  </div>
+</body>
+</html>

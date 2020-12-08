@@ -1,0 +1,25 @@
+.btn-green {
+	box-shadow:inset 0px 1px 0px 0px $green-ligh;
+	background:linear-gradient(to bottom, $color-con 5%, $green-bright 100%);
+	background-color:$color-con;
+	border-radius:6px;
+	border:1px solid $green-bright;
+	display:inline-block;
+	cursor:pointer;
+	color: $color-white;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:16px 37px;
+	text-decoration:none;
+    text-shadow:0px 2px 0px $green-dark;
+    &:hover {
+        background:linear-gradient(to bottom, $green-bright 5%, $color-con 100%);
+        background-color:$green-bright;
+        
+    }
+    &:active {
+        position:relative;
+        top:1px;
+    }
+}
