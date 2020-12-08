@@ -5,7 +5,7 @@
 #### Build a Tribute Page
 
 #### Build a Survey Form
-* [example](https://codepen.io/freeCodeCamp/full/VPaoNP)
+-> [Example](https://codepen.io/freeCodeCamp/full/VPaoNP)
 * [CodePen Baymax Survey Form](https://codepen.io/getSierralta/pen/zYvqKbG)
 * [Baymax Survey Form project](survey/)
 
