@@ -1,6 +1,6 @@
 # Free Code Camp
 
-### Responsive Web Design Certification 
+## Responsive Web Design Certification 
 
 #### Build a Tribute Page
 -> [Example](https://codepen.io/freeCodeCamp/full/zNqgVx)
