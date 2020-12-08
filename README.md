@@ -21,4 +21,6 @@
 * [CodePen The Ennegrams Documentation](https://codepen.io/getSierralta/pen/PoPppvo)
 * [The Ennegrams Documentation project](documentation/)
 #### Build a Personal Portfolio Webpage
-// underconstruction 
+->[Example](https://codepen.io/freeCodeCamp/full/zNBOYG)
+* [CodePen Personal Portfolio](https://codepen.io/getSierralta/pen/GRjjRvW)
+* [Personal Portfolio project](portfolio/)
