@@ -3,7 +3,10 @@
 ### Responsive Web Design Certification 
 
 #### Build a Tribute Page
-// underconstruction 
+-> [Example](https://codepen.io/freeCodeCamp/full/zNqgVx)
+* [CodePen Igor Stravinsky tribute Page](https://codepen.io/getSierralta/pen/MWjedLV)
+* [Igor Stravinsky tribute Page project](survey/)
+
 #### Build a Survey Form
 -> [Example](https://codepen.io/freeCodeCamp/full/VPaoNP)
 * [CodePen Baymax Survey Form](https://codepen.io/getSierralta/pen/zYvqKbG)
