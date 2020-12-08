@@ -1,0 +1,105 @@
+.container__nav{
+    position: fixed;    
+    border-right: solid;
+    max-width: 40%;
+    background-color: $color-grey-dd;
+    @include respond(tab-port){
+        min-width: 100%;
+        z-index: 10000;
+    }
+}
+.nav{
+    width: 100%;
+    text-align: left;          
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70rem;
+    @include respond(tab-port){
+        height: 25rem;
+        text-align: center;
+    }
+    &__link{
+        
+       position: relative;
+       width: 100%;
+       padding: 2rem;
+       text-transform: uppercase;
+       border-bottom: solid .3rem black; 
+       a{
+            display: block;
+            font-size: 1.6rem;
+            color: $color-white;
+            text-decoration: none;
+            font-weight: 400;           
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        &:hover{
+            background-color: $color-secundary;
+        }
+    }
+}
+.t1{
+    background-color: $color1;
+    border-bottom: solid .3rem $color1-l; 
+    &:hover{
+        background-color: $color1-l;
+    }
+}
+.t2{
+    background-color: $color2;
+    border-bottom: solid .3rem $color2-l; 
+     &:hover{
+            background-color: $color2-l;
+        }
+}
+.t3{
+    background-color: $color3;
+    border-bottom: solid .3rem $color3-l;
+     &:hover{
+            background-color: $color3-l;
+        } 
+}
+.t4{
+    background-color: $color4;
+    border-bottom: solid .3rem $color4-l; 
+     &:hover{
+            background-color: $color4-l;
+        }
+}
+.t5{
+    background-color: $color5;
+    border-bottom: solid .3rem $color5-l; 
+     &:hover{
+            background-color: $color5-l;
+        }
+}
+.t6{
+    background-color: $color6;
+    border-bottom: solid .3rem $color6-l; 
+     &:hover{
+            background-color: $color6-l;
+        }
+}
+.t7{
+    background-color: $color7;
+    border-bottom: solid .3rem $color7-l; 
+     &:hover{
+            background-color: $color7-l;
+        }
+}
+.t8{
+    background-color: $color8;
+    border-bottom: solid .3rem $color8-l; 
+     &:hover{
+            background-color: $color8-l;
+        }
+}
+.t9{
+    background-color: $color9;
+    border-bottom: solid .3rem $color9-l; 
+     &:hover{
+            background-color: $color9-l;
+        }
+}

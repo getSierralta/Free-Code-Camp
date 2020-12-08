@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;   
+    background-color: #FAF0E6;
+}
+img{    
+    width:100%;   
+    height: auto; 
+}
+.container{
+    position: absolute;
+    width: 100%;    
+    display: flex;
+    @include respond(tab-port){
+        flex-direction: column;
+    }
+}
