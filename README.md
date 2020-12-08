@@ -5,7 +5,7 @@
 #### Build a Tribute Page
 -> [Example](https://codepen.io/freeCodeCamp/full/zNqgVx)
 * [CodePen Igor Stravinsky tribute Page](https://codepen.io/getSierralta/pen/MWjedLV)
-* [Igor Stravinsky tribute Page project](survey/)
+* [Igor Stravinsky tribute Page project](https://github.com/getSierralta/Free-Code-Camp/tree/main/Tribute%20Page)
 
 #### Build a Survey Form
 -> [Example](https://codepen.io/freeCodeCamp/full/VPaoNP)
