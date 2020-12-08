@@ -1,0 +1,76 @@
+.biography{
+    margin-top: -20rem;  
+    display: flex;
+    margin-bottom: 5rem;
+    align-content: space-between;
+    @include respond(tab-port){
+        flex-direction: column;
+        align-items: center;
+    }
+
+        &__who{
+            max-width: 45rem;
+            margin-top: 40rem;
+            margin-left: 10rem;
+            @include respond(tab-port){                 
+                max-width: 85rem;
+                margin-top: 45rem;
+                margin-left: 0rem;
+            }
+            &--dec{
+                background-color: $color-primary;
+                height: 5rem;
+                z-index: 1;
+                margin-left: 7rem;
+                width: 45rem;
+            }
+            &--text{
+                margin-top: -2.5rem;
+                background-color: $color-white;
+                padding: 3rem;
+                z-index: 5;
+                -webkit-box-shadow: -90px -68px 77px -45px rgba($color-primary-light,0.5);
+                -moz-box-shadow: -90px -68px 77px -45px rgba($color-primary-light,0.5);
+                box-shadow: -90px -68px 77px -45px rgba($color-primary-light,0.5);
+            }
+            
+        }
+        &__early-life{         
+            max-width: 45rem;
+            margin-top: 40rem;            
+            margin-left: 40rem;
+            @include respond(tab-land){
+                margin-left: 20rem;  
+            }
+            @include respond(tab-port){                 
+                max-width: 85rem;
+                margin-top: 5rem;
+                margin-left: 0rem;
+            }
+            &--dec{
+                background-color: $color-secundary;
+                height: 5rem;
+                z-index: 1; 
+                margin-top: -2.5rem;               
+                margin-left: -7rem;
+                width: 45rem;
+            }
+            &--text{
+                background-color: $color-white;
+                padding: 3rem;
+                z-index: 5;
+                -webkit-box-shadow: 118px 110px 65px -45px rgba($color-secundary,0.3);
+                -moz-box-shadow: 118px 110px 65px -45px rgba($color-secundary,0.3);
+                box-shadow: 118px 110px 65px -45px rgba($color-secundary,0.3);
+                @include respond(phone){
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                }
+            }
+
+            
+        }
+       
+    
+}

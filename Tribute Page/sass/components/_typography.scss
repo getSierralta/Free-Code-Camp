@@ -1,0 +1,74 @@
+.title-pri{
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: $color-primary-dark;
+    font-family: 'Special Elite', cursive;
+    font-size: 5rem;
+    transition: all .3s;
+    &:hover{        
+        transform: scale(1.1);
+        text-shadow: 1px 1px 2px GoldenRod, 0 0 1em DarkTurquoise, 0 0 0.2em DarkTurquoise;
+    }
+    @include respond(tab-port){
+        font-size: 3.5rem;
+    } 
+}
+.title-sec{
+    color:$color-complementary-1-dark;
+    text-transform: capitalize;
+    letter-spacing: .3rem;
+    font-size: 1.9rem;    
+    font-family: 'Black Ops One', cursive;
+    transition: all .3s;
+    &:hover{      
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+    }
+}
+.title-ter{
+    color: $color-constrast;
+    text-shadow: .1rem .1rem .1rem $color-constrast-dark;
+    font-size: 2.5rem;
+    transition: all .3s;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    &:hover{
+        transform: scale(1.1) skewY(5deg);
+    }
+}
+.tittle-quar{
+    color: $color-primary-dark;
+    text-shadow: .1rem .1rem .1rem rgba($color-secundary, .5);
+    font-size: 1.8rem;
+    transition: all .3s;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    letter-spacing: .3rem;
+    padding-bottom: 1rem;
+    &:hover{
+        letter-spacing: .5rem;
+        transform: scale(1.1);
+    }
+}
+.paragraph{
+    text-align: justify;
+    font-size: 1.6rem;
+    @include respond(tab-port){                 
+        font-size: 2rem;
+
+    }  
+    
+}
+.margin-bottom-small{
+    margin-bottom: 1.5rem;
+}
+.margin-top-small{
+    margin-top: 1.5rem;
+}
+.philosophy-title{
+    text-align: right;
+}
+.aling{
+    text-align: center;
+}

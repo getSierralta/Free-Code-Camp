@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;    
+    background-color: $color-grey-light;
+}
+img{    
+    width:100%;   
+    height: auto; 
+}
+a{
+        &:link,
+        &:visited{
+            color: $color-grey-light;
+            background-color: $color-grey-dark;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+        &:hover,
+        &:active{
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-secundary, .4);
+            transform: rotate(5deg) scale(1.3);
+        }
+}

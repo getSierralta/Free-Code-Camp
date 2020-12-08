@@ -1,0 +1,61 @@
+
+.footer{
+    background-color: $color-grey-dark;
+    padding: 10rem 0;    
+    position: relative;
+    top: -1rem;
+    height: 50rem;
+    @include respond(tab-port){
+        padding: 8rem 0;
+    }
+
+    
+    &__logo-box{
+        text-align: center;
+        margin-bottom: 8rem;
+        @include respond(tab-port){
+            margin-bottom: 4rem;
+        }
+    }
+    &__logo{
+        font-size: 4rem;
+        font-family: 'Press Start 2P', cursive;
+        color: $color-secundary;
+    }
+    &__navigation{
+        border-top: 1px solid $color-grey-light;
+        padding-top: 2rem;
+        display: inline-block;
+        width: 30%;
+        margin-left: 10%;
+        @include respond(tab-port){
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        display: inline-block;
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+    }
+    &__copyright{
+        color: $color-grey-light;
+        border-top: 1px solid $color-grey-light;
+        padding-top: 2rem;
+        display: inline-block;
+        width: 20%;
+        margin-left: 30%;
+        @include respond(tab-port){
+            width: 100%;
+            text-align: center;
+            float: none;
+            margin-left: 0;
+        }
+
+    }
+}
