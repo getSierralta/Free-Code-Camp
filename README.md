@@ -12,6 +12,6 @@
 #### Build a Product Landing Page
 -> [Example](https://codepen.io/freeCodeCamp/full/RKRbwL)
 * [CodePen Smart House Landing Page](https://codepen.io/getSierralta/pen/vYNgaBx)
-* [Smart House Landing Page project](landing page/)
+* [Smart House Landing Page project](https://github.com/getSierralta/Free-Code-Camp/tree/main/landing%20page)
 #### Build a Technical Documentation Page
 #### Build a Personal Portfolio Webpage
