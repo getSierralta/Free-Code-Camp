@@ -1,0 +1,163 @@
+.title-pri{
+    color: $color-triad;
+    letter-spacing: .1rem;
+    font-family: 'Press Start 2P';
+    &:hover{
+        @include glitch;
+    }
+}
+.title-sec{
+    color: $color-primary;
+    letter-spacing: .2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    z-index: 1;
+    transition: all .4s;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: .2rem rgba($color-primary-d, .9);
+        border-bottom: .2rem  rgba($color-primary-d, .9);
+        transform: scaleY(2);
+        transition: .3s;
+        z-index: -1;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        top: .2rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-primary-d, .9);
+        transform: scale(0);
+        transition: .3s;
+        z-index: -1;
+    }
+    &:hover{
+        letter-spacing: .5rem;
+        color: $color-triad;
+    }
+    &__p{
+        color: $color-white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        display: block;
+        height: 100%;
+        padding: 3rem;
+        z-index: 1;
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-top: .2rem rgba($color-primary-d, .9);
+            border-bottom: .2rem  rgba($color-primary-d, .9);
+            transform: scaleY(2);
+            transition: .3s;
+            z-index: -1;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: .2rem;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color-primary-d, .9);
+            transform: scale(0);
+            transition: .3s;
+            z-index: -1;
+        }
+    }
+}
+.title-ter{
+    color:$color-primary-d;
+    text-transform: capitalize;
+    letter-spacing: .3rem;  
+    font-family: 'Black Ops One', cursive;
+    transition: all .3s;
+    &:hover{      
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+    } 
+}
+.paragraph{
+    text-align: justify;
+    font-size: 1.6rem;
+    @include respond(tab-port){                 
+        font-size: 2rem;
+
+    }  
+    
+}
+.margin-bottom-small{
+    margin-bottom: 1.5rem;
+}
+.margin-top-small{
+    margin-top: 1.5rem;
+}
+.aling{
+    text-align: center;
+}
+.a1{
+    text-decoration: none;
+    color: $color-white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    height: 100%;
+    padding-top: 1rem;
+    transition: .5s;
+    z-index: 1;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: .2rem solid $color-primary-d;
+        border-bottom: .2rem solid $color-primary-d;
+        transform: scaleY(2);
+        opacity: 0;
+        transition: .3s;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        top: .2rem;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-primary-d;
+        transform: scale(0);
+        opacity: 0;
+        transition: .3s;
+        z-index: -1;
+    }
+    &:hover,
+    &:active{
+        color: $color-primary;
+        &:before {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+        &:after {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+    }
+}

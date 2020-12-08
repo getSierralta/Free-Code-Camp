@@ -1,0 +1,16 @@
+.footer{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-white;
+    &__logo{
+        max-width: 30rem;
+        padding-top: 5rem;
+    }
+    &__copyright{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,107 @@
+.code{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    &__column__l{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        &__top{
+            display: flex;
+            width: 100%;
+            height: 40%;            
+           
+            &__content{
+                width: 50%;
+                height: 100%;
+                position: relative;
+            }
+
+        }
+        &__bottom{            
+            position: relative;
+            width: 100%;
+            height: 60%;
+        }
+    }
+    &__column__r{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        &__content{
+            
+            position: relative;
+            width: 100%;
+            height: 33.333333333333333%;
+        }
+    }
+    &__link{
+        position: absolute;
+        right: 0rem;
+        bottom: 0rem;
+        font-size: 1.3rem;
+        letter-spacing: .1rem;
+        padding: 1rem;
+        border-top-left-radius: 50%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        background-color: rgba($color-primary-d, .8);
+        transition: all .5s;
+      
+        & a{
+            color: $color-white;
+            text-transform: uppercase;
+            transition: all .5s;
+            &:hover{
+                font-size: 3rem;
+                color: $color-triad;
+                letter-spacing: .5rem;
+            }
+        }
+        &:hover{
+            border-top-left-radius: 0%;
+        }
+    }
+}
+#c1{
+  background-image: url("../img/gif1.png");
+  background-size: cover;
+  &:hover{
+      background-image: url("../img/gif1.gif");
+  } 
+}
+#c2{
+    background-image: url("../img/gif2.png");
+    background-size: cover;
+    &:hover{
+        background-image: url("../img/gif2.gif");
+    } 
+  }
+#c3{
+  background-image: url("../img/gif3.png");
+  background-size: cover;
+  &:hover{
+      background-image: url("../img/gif3.gif");
+  } 
+}
+#c4{
+  background-image: url("../img/gif4.png");
+  background-size: cover;
+  &:hover{
+      background-image: url("../img/gif4.gif");
+  } 
+}
+#c5{
+    background-image: url("../img/gif5.png");
+    background-size: cover;
+    &:hover{
+        background-image: url("../img/gif5.gif");
+    } 
+  }
+#c6{
+  background-image: url("../img/gif6.png");
+  background-size: cover;
+  &:hover{
+      background-image: url("../img/gif6.gif");
+  } 
+}
