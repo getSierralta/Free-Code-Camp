@@ -1,0 +1,209 @@
+.form{
+    padding: 4rem 10rem 5rem 10rem;
+    background-color: rgba($color-white, .95);
+    max-width: 50%;
+    margin-left: 20%;    
+    margin-right: 20%;    
+    margin-top: 4%;    
+    margin-bottom: 4%;
+    @include respond(tab-port){                   
+        max-width: 60%;
+        margin-left: 10%;    
+        margin-right: 10%;
+    }
+    @include respond(phone){                   
+        max-width: 100%;
+        margin-left: 1rem;    
+        margin-right: 1rem;
+        padding: 4rem 2rem 5rem 2rem;
+    }
+    &__form{        
+        display: flex;
+        flex-direction: column;
+        padding-top: 2.5rem;
+        &--text{
+            height: 4rem;
+            width: 50rem;
+            background-color: rgba($color-white, .5);
+            border: none;
+            border-radius: 2px;
+            border-bottom: 3px solid transparent;
+            display: block;
+            transition: all .3s;
+            @include respond(phone){                   
+                width: 45rem;
+            }
+            
+            &::-webkit-input-placeholder{
+                color: $color-grey-dark;
+                padding-left: 1rem;
+                font-family: 'Roboto Slab', serif;
+            }
+            &:focus:invalid{
+                border-bottom: 3px solid $color-compl;
+            }
+            &:focus{
+                outline: none;
+                box-shadow: 0 1rem 2rem rgba($color-black,.1);
+                border-bottom: 3px solid $color-con;
+            }
+            &--label{
+                color: transparent;
+            }
+            &--textarea{
+                height: 20rem;
+                width: 71rem;
+                background-color: $color-grey;
+                
+                
+                @include respond(tab-land){                   
+                    width: 49rem;
+                }
+                @include respond(tab-port){                   
+                    width: 57rem;
+                }
+                @include respond(phone){                   
+                    width: 100%;
+                }
+            }
+        }
+        &--dropdown{
+            background-color: $color-con;
+            padding: 1.5rem;
+            max-width: 50rem;
+            border: none;
+            cursor: pointer;
+            color: $color-white;
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.8rem;
+            letter-spacing: .5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem
+        }
+        &__container-radio{
+            display: flex;
+            padding: 2rem;
+           
+            &--label{
+                display: block;
+                position: relative;
+                padding-left: 3rem;
+                margin-bottom: 1.2rem;
+                cursor: pointer;
+                font-size: 2.2rem;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                
+                &--radio{
+                    padding-top: 1rem;
+                }
+                &--checkmark{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    background-color: $color-white;
+                    border-radius: 50%;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        display: none;
+                      }
+                }
+            }
+            &--label input{
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+                
+            }
+            &--label input ~ &--label--checkmark {
+                background-color: $color-grey;
+            }
+            &--label input:checked ~ &--label--checkmark {
+                background-color: $color-con;
+            }
+            &--label input:checked ~ &--label--checkmark:after {
+                display: block;
+              }
+            &--label &--label--checkmark:after{
+                top: .9rem;
+                left: .9rem;
+                width: .8rem;
+                height: .8rem;
+                border-radius: 50%;
+                background: $color-white;
+            }
+        }
+        &__container-check-box{
+            display: flex;
+            padding: 2rem;
+           
+            &--label{
+                display: block;
+                position: relative;
+                padding-left: 3.5rem;
+                margin-bottom: 1.2rem;
+                cursor: pointer;
+                font-size: 2.2rem;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                &--checkmark{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    background-color: $color-white;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        display: none;
+                      }
+                }
+            }
+            &--label input{
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;                
+            }
+            &--label input ~ &--label--checkmark {
+                background-color: $color-grey;
+            }
+            &--label:hover input ~ &--label--checkmark {
+                background-color: $color-con;
+            }
+            
+            &--label input:checked ~ &--label--checkmark {
+                background-color: $color-con;
+            }
+            &--label input:checked ~ &--label--checkmark:after {
+                display: block;
+              }
+            &--label &--label--checkmark:after{
+                left: .9rem;
+                top: .5rem;
+                width: .5rem;
+                height: 1rem;
+                border: solid $color-white;
+                border-width: 0 .3rem .3rem 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+        &--button{
+            margin-top: 5rem;
+        }
+    }
+}

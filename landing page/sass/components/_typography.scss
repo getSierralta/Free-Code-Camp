@@ -1,0 +1,55 @@
+.title-pri{
+    font-size: 4rem;    
+    text-transform: uppercase;
+	  background: -webkit-linear-gradient(152deg, $color-secundary 0%, $color-primary 40%, $color-ter 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-family: 'Press Start 2P';
+    letter-spacing: 1rem;
+    transition: all .2s;
+    @include glitch;
+    @include respond(phone){
+        font-size: 2.5rem; 
+    }
+    
+}
+   
+
+.title-sec{
+    color: $color-white;      
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-family: 'Orbitron', sans-serif;
+    @include glitch;
+    @include respond(phone){
+        font-size: 3rem; 
+    }
+    
+}
+.para{
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  -moz-column-count: 2;
+  -moz-column-gap: 4rem;
+  -moz-column-rule: 1px solid $color-grey;
+  column-count: 2;
+  column-gap: 4rem;
+  column-rule: 1px solid $color-grey;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+   
+}
+.margin-bottom-small{
+    margin-bottom: 1.5rem;
+}
+.margin-top-small{
+    margin-top: 1.5rem;
+}
+.aling{
+    text-align: center;
+}
+
+

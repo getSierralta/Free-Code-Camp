@@ -1,0 +1,239 @@
+.card{
+    //FUNCTIONALITY
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 52rem;
+
+
+    &__side{       
+        height: 52rem;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+        &--front{
+            background-color: $color-white;
+        }
+        &--back{
+            background-color: $color-secundary;            
+            transform: rotateY(-180deg);
+            &-1{
+                background-image: linear-gradient(
+                   to right bottom,
+                   $color-triad-2,
+                   $color-triad-2-dark 
+                );
+            }
+            &-2{
+                background-image: linear-gradient(
+                   to right bottom,
+                   $color-primary,
+                   $color-primary-dark 
+                );
+            }
+            &-3{
+                background-image: linear-gradient(
+                   to right bottom,
+                   $color-triad-1,
+                   $color-triad-1-dark
+                );
+            }
+        }
+    }
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+    
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+    //Front side styling
+
+    &__picture{
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        
+        &--1{
+            background-image: linear-gradient(
+                to right bottom, 
+                $color-triad-2,
+                $color-triad-2-dark ),
+            url(../img/img1.jpg);
+        }
+        &--2{
+            background-image: linear-gradient(
+                to right bottom, 
+                $color-primary,
+                   $color-primary-dark),
+            url(../img/img2.jpg);
+        }
+        &--3{
+            background-image: linear-gradient(
+                to right bottom, 
+                $color-triad-1,
+                $color-triad-1-dark),
+            url(../img/img3.jpg);
+        }
+    }
+    &__heading{
+        font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+    }
+
+    &__heading-span{
+        padding: 2rem, 1.5rem;
+        -webkit-box-decoration-break: clone;
+         box-decoration-break: clone;
+
+        &-1{
+            background-image: linear-gradient(to right bottom,
+             rgba($color-triad-2,.85), 
+             rgba($color-triad-2-dark, .85));
+        }
+        &-2{
+            background-image: linear-gradient(to right bottom,
+             rgba($color-primary,.85), 
+             rgba($color-primary-dark, .85));
+        }
+        &-3{
+            background-image: linear-gradient(to right bottom,
+             rgba($color-triad-1,.85), 
+             rgba($color-triad-1-dark, .85));
+        }
+    }
+    &__details{
+        padding: 3rem;
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey;
+                }
+            }
+        }
+
+    }
+    // back side styling
+    &__cta{
+        position: absolute;
+        width: 85%;
+        top: 15rem;
+        left: 2.5rem;
+        transform: translate(0);
+        text-align: center;
+    }
+    &__text{
+        color: $color-white;
+        &--header{
+            margin-bottom: 5rem;
+        }
+        &--text{
+            font-size: 1.6rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    @include respond(tab-port){
+        height: auto; 
+        background-color: $color-white;  
+        box-shadow: 0 1.5rem 4rem rgba(black, .15); 
+        &__side{       
+            height:  auto;
+            position: relative;
+            box-shadow: none;
+
+            &--front{
+                background-color: $color-white;
+            }
+            &--back{                           
+                transform: rotateY(0);
+                clip-path: polygon(0% 15%, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+
+        &:hover &__side--front{
+            transform: rotateY(0);
+        }     
+        &__details{
+            padding: 1rem 3rem;
+        }  
+    
+        // back side styling
+        &__cta{
+            position: relative;
+            left: 0;
+            right: 0;
+            width: 100%;
+            transform: translate(0);
+            margin-bottom: 10rem;
+
+        }
+        &__text{
+            color: $color-white; 
+            
+            &--header{
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+            &--text{
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+/* <div class="card">
+<div class="card__side card__side--front">
+    <div class="card__picture card__picture--1">&nbsp;</div>
+    <h4 class="card__heading">
+        <span class="card__heading-span card__heading-span-1">
+            Package 1
+        </span>
+    </h4>
+    <div class="card__details">
+        <p class="para">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque porro corporis quisquam officiis quos accusamus fugiat laboriosam, quo provident sapiente tempora quam consectetur commodi dolorem corrupti obcaecati incidunt voluptatibus. Perspiciatis!
+            
+        </p>
+    </div>
+</div>
+<div class="card__side card__side--back card__side--back-1">
+    <div class="card__cta">
+        <div class="card__text">
+            <h3 class="card__text--header">package 1</h3>
+            <p class="card__text--text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, similique sequi labore repellendus ex illo rem provident officia, iure consectetur omnis odit suscipit aliquid quia tempore nostrum laborum sit. Aperiam.
+
+            </p>
+        </div>
+        <a href="#" class="btn btn--white">Visit</a>
+    </div>
+</div>
+
+</div>    */
