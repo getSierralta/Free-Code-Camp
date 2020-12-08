@@ -10,5 +10,8 @@
 * [Baymax Survey Form project](survey/)
 
 #### Build a Product Landing Page
+-> [Example](https://codepen.io/freeCodeCamp/full/RKRbwL)
+* [CodePen Smart House Landing Page](https://codepen.io/getSierralta/pen/vYNgaBx)
+* [Smart House Landing Page project](landing page/)
 #### Build a Technical Documentation Page
 #### Build a Personal Portfolio Webpage
